@@ -7,3 +7,4 @@
 6-multiple_permissions: gives execute permission to group and owner while giving read access to other users for the file hello
 7-everybody: give execute permission for all users for the file hello
 8-James_Bond: gives all the permissions to other users but no permission to group and owner
+9-John_Doe: gives every permission to owner, read and execute for group and write and execute for other users
