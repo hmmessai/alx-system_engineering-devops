@@ -8,3 +8,5 @@
 7-everybody: give execute permission for all users for the file hello
 8-James_Bond: gives all the permissions to other users but no permission to group and owner
 9-John_Doe: gives every permission to owner, read and execute for group and write and execute for other users
+10-mirror_permissions: mirror permissions from the olleh file to hello file
+11-directories_permissions: changes the permission of the current direcories sub directories to execut
