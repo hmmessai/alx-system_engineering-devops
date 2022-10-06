@@ -4,3 +4,4 @@
 3-new_owner: assigns a new owner for file hello
 4-empty: create and empty file hello in the current directory
 5-execute: gives the user an executable permission to the hello file
+6-multiple_permissions: gives execute permission to group and owner while giving read access to other users for the file hello
