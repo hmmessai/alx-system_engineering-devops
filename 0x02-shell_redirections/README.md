@@ -9,3 +9,4 @@
 12-newest_directories: prints the newest 10 files in the current directory
 13-unique: prints the items listed only once in a given file
 14-findthatword: find lines containing root in the file etc/passwd
+15-countthatword: displays how many times bin has been mentioned in the file /etc/passwd
