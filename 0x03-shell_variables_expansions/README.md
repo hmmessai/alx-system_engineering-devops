@@ -8,3 +8,6 @@
 11-binary_to_decimal: prints the decimal value of the binary variable BINARY
 12-combinations: prints all the possible combinations of characters from a to z without only oo
 13-print_float: prints the NUM variables in 2 decimal place
+100-decimal_to_hexadecimal: changes the given decimal number by the name DECIMAL to hexadecimal value
+101-rot13 encryption
+102-odd: prints every other line from the standard input
