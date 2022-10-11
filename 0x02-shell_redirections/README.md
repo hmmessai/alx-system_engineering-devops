@@ -11,3 +11,7 @@
 14-findthatword: find lines containing root in the file etc/passwd
 15-countthatword: displays how many times bin has been mentioned in the file /etc/passwd
 16-whatsnext: displays 3 lines after the desired word 'root' appears in the file /etc/passwd
+19-AZ: changes all 'A' to 'Z' and all 'c' to 'e'
+20-hiago: removes all the 'C' and 'c' characters from input
+21-reverse: reverses the input characterwise
+22-users_and_homes: prints the homes of all users
