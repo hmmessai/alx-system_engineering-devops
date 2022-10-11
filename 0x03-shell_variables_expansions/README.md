@@ -3,3 +3,7 @@
 2-path: adds /action to the environment variable PATH
 3-paths: prints the number of directories in PATH
 4-global_variables: prints all the global variables
+10-love_exponent_breath: displays the value of BREATH to the power of LOVE
+11-binary_to_decimal: prints the decimal value of the binary variable BINARY
+12-combinations: prints all the possible combinations of characters from a to z without only oo
+13-print_float: prints the NUM variables in 2 decimal place
