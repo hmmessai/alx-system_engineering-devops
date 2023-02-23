@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Groups the visitors by IP and HTTP status code from the info we got appache log file
+
+awk '{print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn
