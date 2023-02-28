@@ -8,11 +8,12 @@ The Unix-like operating systems, such as Linux differ from other computing syste
 We explore a powerful feature used by command line programs called input/output redirection.
 We learned about filters take standard input and perform an operation upon it and send the results to standard output and other features used by command line programs.
 ### [Shell, init files, variables and expansions](./0x03-shell_variables_expansions)
-Exploring some concepts of - Shell Arithemtic
-			- Variables in shell
-			- Shell Initialization files
-			- Aliasing
-			- Expansions
+Exploring some concepts of 
+- Shell Arithemtic
+- Variables in shell
+- Shell Initialization files
+- Aliasing
+- Expansions
 ### [Loops, conditions and parsing](./0x04-loops_conditions_and_parsing)
 Worked on loops conditions and parsing in a shell environment(bash).
 - Comparision operators
