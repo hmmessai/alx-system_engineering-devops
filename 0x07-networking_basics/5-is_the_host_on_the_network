@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Pings an IP address passed as an argument
 ip=$#
 if ((ip != 1))
 then
