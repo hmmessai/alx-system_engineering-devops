@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # Connect to server specified using ssh
-ssh-copy-id ubuntu@34.204.60.200
+ssh -i ~/.ssh/school ubuntu@34.204.60.200
