@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Transfers a file from our client to a server
-path = pwd
+path=pwd
 if (($# == 4));
 	then 
 		scp -i "$4"  -o StrictHostKeyChecking=no "$path"/"$1" "$3"@"$2":/home/
