@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+name= echo -n `pwd` | sed 's/$/\//g'; echo $1
+echo "$name"
