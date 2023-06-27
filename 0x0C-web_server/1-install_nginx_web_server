@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Configures the new Ubuntu machine to run nginx
+sudo apt-get update
+sudo apt-get install nginx
+cat "Hello World!" > /var/www/html/index.html
