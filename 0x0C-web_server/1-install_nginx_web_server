@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Configures the new Ubuntu machine to run nginx
+# Nginx should listen through port 80
 sudo -y apt-get update
 sudo -y apt-get install nginx
+sudo ufw allow 'Nginx HTTP'
 cat "Hello World!" > /var/www/html/index.html
