@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 # Install and configure HAproxy on a server
 # to distribute requests using roundbin algorithm
-sudo apt-get install -y --no-install-recommends software-properties-common
-sudo add-apt-repository ppa:vbernat/haproxy-2.8 -y
-sudo apt-get update
-sudo apt-get install haproxy=2.8.\*
+apt-get update
+apt-get install haproxy=2.8.\*
 
 echo "ENABLED=1" >> /etc/default/haproxy
 mv /etc/haproxy/haproxy.cfg{,.original}
@@ -12,12 +10,12 @@ touch /etc/haproxy/haproxy.cfg
 
 printf %s "frontend my-front-end
 	mode http
-	bind *80
+	bind *:80
 	default_backend my-servers
 backend my-servers
 	balance roundrobin
-	server 59637-web-01 54.160.85.72:80 check
-	server 59637-web-02 35.175.132.106:80 check
+	server 56698-web-01 3.85.1.5:80 check
+	server 56698-web-02 54.237.43.12:80 check
 " >> /etc/haproxy/haproxy.cfg
 
 service haproxy restart
