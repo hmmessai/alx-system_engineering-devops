@@ -10,7 +10,7 @@ touch /etc/haproxy/haproxy.cfg
 
 printf %s "frontend my-front-end
 	mode http
-	bind *:80
+	bind 127.0.0.1:80
 	default_backend my-servers
 backend my-servers
 	balance roundrobin
