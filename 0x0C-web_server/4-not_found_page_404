@@ -9,12 +9,7 @@ touch /etc/nginx/html/index.html
 echo "Hello World!" > /etc/nginx/html/index.html
 touch /etc/nginx/html/404.html
 echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
-
-config="}\n\terror_page 404 /404.html;
-	location /404 {
-      		root /etc/nginx/html;
-      		internal;
-    	}" 
-sed -i "s/}/$config/" /etc/nginx/sites-available/default
+config="server_name _;\n\n\tlocation \/redirect_me {\n\t\treturn 301 https:\/\/www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}\n\n\terror_page 404 \/404.html;\n\tlocation \/404 {\n\t\troot \/etc\/nginx\/html;\n\t\tinternal;\n\t}" 
+sed -i "s/server_name _;/$config/" /etc/nginx/sites-available/default
 
 service nginx restart
