@@ -5,8 +5,6 @@ apt-get update
 apt-get install haproxy=2.8.\*
 
 echo "ENABLED=1" >> /etc/default/haproxy
-mv /etc/haproxy/haproxy.cfg{,.original}
-touch /etc/haproxy/haproxy.cfg
 
 printf %s "frontend my-front-end
 	mode http
