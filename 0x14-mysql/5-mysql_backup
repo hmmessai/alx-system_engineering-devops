@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Backs up all the databases and tables inside
+# and creates an archive
+mysqldump -u root -p "$1" --all-databases > backup.sql
+filename=`date +"%d-%m-%Y"`
+tar -czvf "$filename.tar.gz" backup.sql
