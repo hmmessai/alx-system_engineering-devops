@@ -2,9 +2,9 @@
 """For a given employee ID, returns information
 about his/her TODO list progress
 """
+import csv
 import requests
 import sys
-import csv
 
 
 if __name__ == '__main__':
@@ -14,4 +14,5 @@ if __name__ == '__main__':
 
     with open("{}.csv".format(sys.argv[1]), 'w') as f:
         obj = csv.writer(f)
-        [obj.writerow([user['id'], user['name'], t['completed'], t['title']])for t in todos]
+        [obj.writerow([user['id'], user['name'], t['completed'], t['title']])
+                for t in todos]
