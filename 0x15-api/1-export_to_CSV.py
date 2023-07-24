@@ -13,6 +13,6 @@ if __name__ == '__main__':
     todos = requests.get(url + "todos", params={"userId": sys.argv[1]}).json()
 
     with open("{}.csv".format(sys.argv[1]), 'w') as f:
-        obj = csv.writer(f)
+        obj = csv.writer(f, quoting=csv.QUOTE_ALL)
         [obj.writerow([user['id'], user['name'], t['completed'], t['title']])
-                for t in todos]
+         for t in todos]
