@@ -14,5 +14,5 @@ if __name__ == '__main__':
 
     with open("{}.csv".format(sys.argv[1]), 'w') as f:
         obj = csv.writer(f, quoting=csv.QUOTE_ALL)
-        [obj.writerow([user['id'], user['name'], t['completed'], t['title']])
+        [obj.writerow([user['id'], user['username'], t['completed'], t['title']])
          for t in todos]
