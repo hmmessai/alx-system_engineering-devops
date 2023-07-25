@@ -13,8 +13,8 @@ if __name__ == '__main__':
     todos = requests.get(url + "todos", params={"userId": sys.argv[1]}).json()
 
     with open("{}.json".format(sys.argv[1]), "w") as jsonfile:
-            record = {sys.argv[1]: [{"task": t["title"],
+        record = {sys.argv[1]: [{"task": t["title"],
                                  "completed": t["completed"],
                                  "username": user["username"]}
-                                 for t in todos]}
-            json.dump(record, jsonfile)
+                                for t in todos]}
+        json.dump(record, jsonfile)
