@@ -1,0 +1,79 @@
+[34m
+* Datadog Agent 7 install script v1.20.0
+[0m
+[34m
+* Installing apt-transport-https, curl and gnupg
+[0m
+sudo: unable to resolve host ubuntu: Name or service not known
+Hit:1 http://et.archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:3 http://et.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:4 https://dl.winehq.org/wine-builds/ubuntu jammy InRelease [8,041 B]
+Hit:5 https://repo.protonvpn.com/debian stable InRelease
+Hit:6 https://dl.google.com/linux/chrome/deb stable InRelease
+Err:4 https://dl.winehq.org/wine-builds/ubuntu jammy InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 76F1A20FF987672F
+Get:7 http://security.ubuntu.com/ubuntu jammy-security/main amd64 DEP-11 Metadata [42.8 kB]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 DEP-11 Metadata [39.9 kB]
+Get:9 http://et.archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [467 kB]
+Get:10 http://et.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [868 kB]
+Get:11 http://et.archive.ubuntu.com/ubuntu jammy-updates/main amd64 DEP-11 Metadata [100 kB]
+Get:12 http://et.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [964 kB]
+Get:13 http://et.archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [646 kB]
+Get:14 http://et.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [209 kB]
+Get:15 http://et.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [278 kB]
+Get:16 http://et.archive.ubuntu.com/ubuntu jammy-updates/multiverse i386 Packages [3,908 B]
+Get:17 http://et.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [41.6 kB]
+Get:18 http://et.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Reading package lists...
+W: GPG error: https://dl.winehq.org/wine-builds/ubuntu jammy InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 76F1A20FF987672F
+E: The repository 'https://dl.winehq.org/wine-builds/ubuntu jammy InRelease' is not signed.
+[31m'apt-get update' failed, the script will not install the latest version of apt-transport-https.[0m
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.81.0-1ubuntu1.13).
+gnupg is already the newest version (2.2.27-3ubuntu2.1).
+gnupg set to manually installed.
+apt-transport-https is already the newest version (2.4.9).
+0 upgraded, 0 newly installed, 0 to remove and 144 not upgraded.
+[34m
+* Installing APT package sources for Datadog
+[0m
+sudo: unable to resolve host ubuntu: Name or service not known
+sudo: unable to resolve host ubuntu: Name or service not known
+sudo: unable to resolve host ubuntu: Name or service not known
+sudo: unable to resolve host ubuntu: Name or service not known
+sudo: unable to resolve host ubuntu: Name or service not known
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  6226  100  6226    0     0   5944      0  0:00:01  0:00:01 --:--:--  5946
+sudo: unable to resolve host ubuntu: Name or service not known
+sudo: unable to resolve host ubuntu: Name or service not known
+gpg: directory '/root/.gnupg' created
+gpg: /root/.gnupg/trustdb.gpg: trustdb created
+gpg: key 32637D44F14F620E: public key "Datadog, Inc. Master key (2020-09-08) <package+masterkey@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+sudo: unable to resolve host ubuntu: Name or service not known
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  1713  100  1713    0     0   2058      0 --:--:-- --:--:-- --:--:--  2058
+sudo: unable to resolve host ubuntu: Name or service not known
+sudo: unable to resolve host ubuntu: Name or service not known
+gpg: key E6266D4AC0962C7D: public key "Datadog, Inc. APT key (2023-04-20) (APT key) <package+aptkey@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+sudo: unable to resolve host ubuntu: Name or service not known
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  6226  100  6226    0     0   7420      0 --:--:-- --:--:-- --:--:--  7420100  6226  100  6226    0     0   7413      0 --:--:-- --:--:-- --:--:--  7411
+sudo: unable to resolve host ubuntu: Name or service not known
+sudo: unable to resolve host ubuntu: Name or service not known
+gpg: key 32637D44F14F620E: "Datadog, Inc. Master key (2020-09-08) <package+masterkey@datadoghq.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+sudo: unable to resolve host ubuntu: Name or service not known
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
